@@ -1,0 +1,50 @@
+[project]
+name = "pdfservices-python-sdk"
+version = "2.3.1"
+# license = "Apache2"
+description = "Adobe PDFServices Client Library"
+authors = [
+    { name = "Adobe Document Services", email = "extractapi@adobe.com" }
+]
+dependencies = [
+    "PyJWT",
+    "PyYAML",
+    "Pygments",
+    "build",
+    "certifi",
+    "cffi",
+    "cryptography",
+    "multipart",
+    "packaging",
+    "pep517",
+    "polling",
+    "polling2",
+    "pycparser",
+    "pyparsing",
+    "requests",
+    "six",
+    "toml",
+    "urllib3",
+]
+readme = "README.md"
+requires-python = ">= 3.6"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://www.adobe.com/go/pdftoolsapi_doc"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
